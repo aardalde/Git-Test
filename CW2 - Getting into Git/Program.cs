@@ -1,15 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CW2___Getting_into_Git
+namespace ConsoleApp1
 {
-    class Program
+    class CW2__Getting_into_Git
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello World!");
+            Console.ReadKey(); 
+        }
+        void sayGoodbye()
+        {
+            Console.WriteLine("Goodbye World!");
         }
     }
 }
