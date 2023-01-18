@@ -21,13 +21,17 @@ namespace Classwork_2
 
             do
             {
-                int number = rand.Next(0, 100);
+                Console.WriteLine("Pick the lower bound of the random number generator: ");
+                int lowerBound = int.Parse(Console.ReadLine());
+                Console.WriteLine("Pick the upper bound of the random number generator: ");
+                int upperBound = int.Parse(Console.ReadLine());
+                int number = rand.Next(lowerBound, upperBound);
                 Console.WriteLine("The random number for testing purposes: " + number);
                 int numGuesses = 1;
 
                 while (true)
                 {
-                    Console.WriteLine("Enter a guess between 0 and 100: ");
+                    Console.WriteLine("Enter your guess: ");
                     int userGuess = int.Parse(Console.ReadLine());
 
                     if (userGuess < number)
